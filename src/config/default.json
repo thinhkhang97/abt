@@ -6,6 +6,10 @@
         {
           "base": "AMI",
           "quote": "USDT"
+        },
+        {
+          "base": "THL",
+          "quote": "USDT"
         }
       ]
     }
@@ -18,6 +22,11 @@
           "base": "AMI",
           "quote": "USDT",
           "tokenAddress": "0xb36527754eb54d7ff55daf13bcb54b42b88ec484bd6f0e3b2e0d1db169de6451"
+        },
+        {
+          "base": "THL",
+          "quote": "USDT",
+          "tokenAddress": "0x7fd500c11216f0fe3095d0c4b8aa4d64a4e2e04f83758462f2b127255643615::thl_coin::THL"
         }
       ]
     }

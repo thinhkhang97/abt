@@ -35,11 +35,10 @@ async function startFetchingPriceFromDEX(): Promise<void> {
   while (true) {
     await Promise.all(
       dexes.map(async (dex) => {
-        config.dex[dex.name].pairs.forEach(async (pair) => {
-          const { base, quote, tokenAddress } = pair;
-          const price = await dex.fetchPrice(`${base}${quote}`, tokenAddress);
-          priceStore.updatePrice(dex.name, `${base}${quote}`, price);
-          console.log(priceStore.getPrice(dex.name, `${base}${quote}`));
+        const prices = await dex.fetchPrices(config.dex[dex.name].pairs);
+        prices.forEach((price) => {
+          priceStore.updatePrice(dex.name, price.pair, price);
+          console.log(priceStore.getPrice(dex.name, price.pair));
         });
       })
     );
