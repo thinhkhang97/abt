@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -11,10 +14,13 @@
   "description": "",
   "devDependencies": {
     "@types/node": "^22.14.1",
+    "@types/ws": "^8.18.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "axios": "^1.8.4",
+    "ccxt": "^4.4.75",
     "config": "^3.3.12",
     "dotenv": "^16.5.0",
     "winston": "^3.17.0"

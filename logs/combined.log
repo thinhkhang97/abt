@@ -1,0 +1,202 @@
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 16:19:12"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 16:19:12"}
+{"error":{},"level":"error","message":"Failed to start arbitrage system:","service":"arbitrage-system","timestamp":"2025-04-20 16:19:13"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 16:21:46"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 16:21:46"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 16:21:47"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 16:21:47"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 16:21:47"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 16:22:15"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 16:22:17"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 16:22:17"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 16:22:17"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 16:22:17"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 16:22:17"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 16:25:43"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 16:29:20"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 16:29:20"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 16:29:21"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 16:29:21"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 16:29:21"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 16:29:29"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 16:29:31"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 16:29:31"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 16:29:31"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 16:29:31"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 16:29:31"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 16:29:40"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 16:30:13"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 16:30:13"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 16:30:14"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 16:30:14"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 16:30:14"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 16:37:59"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 16:38:01"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 16:38:01"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 16:38:01"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 16:38:01"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 16:38:01"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 16:38:08"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 16:38:24"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 16:38:24"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 16:38:24"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 16:38:24"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 16:38:24"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 16:38:31"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 16:39:51"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 16:39:51"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 16:39:52"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 16:39:52"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 16:39:52"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 16:40:15"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 16:40:25"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 16:40:25"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 16:40:26"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 16:40:26"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 16:40:26"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 16:40:40"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 16:41:17"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 16:41:17"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 16:41:18"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 16:41:18"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 16:41:18"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 16:42:54"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 16:42:56"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 16:42:56"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 16:42:57"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 16:42:57"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 16:42:57"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 16:43:05"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 16:43:12"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 16:43:12"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 16:43:12"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 16:43:12"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 16:43:12"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 16:43:22"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 16:43:24"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 16:43:24"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 16:43:24"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 16:43:24"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 16:43:24"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 16:44:15"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 16:45:16"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 16:45:16"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 16:45:17"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 16:45:17"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 16:45:17"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 16:45:50"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 16:45:52"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 16:45:52"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 16:45:52"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 16:45:52"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 16:45:52"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 16:46:01"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 16:48:18"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 16:48:18"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 16:48:18"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 16:48:18"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 16:48:18"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 16:48:25"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 16:50:55"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 16:50:55"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 16:50:55"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 16:50:55"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 16:50:55"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 16:51:02"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 16:51:29"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 16:51:29"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 16:51:29"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 16:51:29"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 16:51:29"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 16:51:32"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 16:51:52"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 16:51:52"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 16:51:52"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 16:51:52"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 16:51:52"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 16:51:54"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 16:52:03"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 16:52:03"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 16:52:03"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 16:52:03"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 16:52:03"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 16:52:06"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 16:53:09"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 16:53:09"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 16:53:09"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 16:53:09"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 16:53:09"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 16:53:12"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 19:32:53"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 19:32:53"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 19:32:53"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 19:32:53"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 19:32:53"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 19:33:02"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 20:18:07"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 20:18:07"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 20:18:08"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 20:18:08"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 20:18:08"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 20:18:20"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 20:18:31"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 20:18:31"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 20:18:31"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 20:18:31"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 20:18:31"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 20:18:36"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 20:18:42"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 20:18:42"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 20:18:42"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 20:18:42"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 20:18:42"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 20:18:45"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 20:22:59"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 20:22:59"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 20:22:59"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 20:22:59"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 20:22:59"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 20:23:17"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 20:23:19"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 20:23:19"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 20:23:19"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 20:23:19"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 20:23:19"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 20:25:09"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 20:28:12"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 20:28:12"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 20:28:12"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 20:28:12"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 20:28:12"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 20:30:14"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 20:30:19"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 20:30:19"}
+{"level":"info","message":"Connected to exchange","service":"arbitrage-system","timestamp":"2025-04-20 20:30:19"}
+{"level":"info","message":"Price fetching service started","service":"arbitrage-system","timestamp":"2025-04-20 20:30:19"}
+{"level":"info","message":"Arbitrage system running successfully","service":"arbitrage-system","timestamp":"2025-04-20 20:30:19"}
+{"level":"info","message":"Shutting down arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 20:41:27"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 20:41:29"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 20:41:29"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 21:01:56"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 21:01:56"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 21:02:23"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 21:02:23"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 21:02:52"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 21:02:52"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 21:03:14"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 21:03:14"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 21:03:53"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 21:03:53"}
+{"error":{"code":"ERR_BAD_REQUEST","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"env":{},"headers":{"Accept":"application/json, text/plain, */*","Accept-Encoding":"gzip, compress, deflate, br","User-Agent":"axios/1.8.4","x-api-key":"a4^KV_EaTf4MW#ZdvgGKX#HUD^3IFEAOV_kzpIE^3BQGA8pDnrkT7JcIy#HNlLGi"},"maxBodyLength":-1,"maxContentLength":-1,"method":"get","params":{"tokenAddress":"0xb36527754eb54d7ff55daf13bcb54b42b88ec484bd6f0e3b2e0d1db169de6451"},"timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"https://api.panora.exchange/prices","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 429","name":"AxiosError","stack":"AxiosError: Request failed with status code 429\n    at settle (/Users/nguyenthinhkhang/Projects/Products/abt-ts/node_modules/axios/lib/core/settle.js:19:12)\n    at IncomingMessage.handleStreamEnd (/Users/nguyenthinhkhang/Projects/Products/abt-ts/node_modules/axios/lib/adapters/http.js:599:11)\n    at IncomingMessage.emit (node:events:530:35)\n    at IncomingMessage.emit (node:domain:489:12)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at processTicksAndRejections (node:internal/process/task_queues:90:21)\n    at Axios.request (/Users/nguyenthinhkhang/Projects/Products/abt-ts/node_modules/axios/lib/core/Axios.js:45:41)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)","status":429},"level":"error","message":"Failed to start arbitrage system:","service":"arbitrage-system","timestamp":"2025-04-20 21:03:56"}
+{"level":"info","message":"Starting arbitrage system in monitor mode...","service":"arbitrage-system","timestamp":"2025-04-20 21:04:14"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 21:04:14"}
+{"level":"info","message":"Starting arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 21:50:50"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 21:50:50"}
+{"level":"info","message":"Starting arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 21:52:23"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 21:52:23"}
+{"level":"info","message":"Starting arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 21:53:21"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 21:53:21"}
+{"level":"info","message":"Starting arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 21:54:26"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 21:54:26"}
+{"level":"info","message":"Starting arbitrage system...","service":"arbitrage-system","timestamp":"2025-04-20 21:57:27"}
+{"level":"info","message":"Starting price fetching service","service":"arbitrage-system","timestamp":"2025-04-20 21:57:27"}
