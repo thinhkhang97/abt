@@ -63,7 +63,12 @@ export class Panora implements DEX {
       }));
     } catch (error) {
       console.error("Error fetching price from panora", error);
-      return [];
+      return pairs.map((pair) => ({
+        exchange: this.name,
+        pair: `${pair.base}${pair.quote}`,
+        price: null,
+        timestamp: Date.now(),
+      }));
     }
   }
 }

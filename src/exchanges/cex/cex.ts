@@ -20,7 +20,7 @@ export interface CEX {
    * @param base - Base currency (e.g., 'BTC')
    * @param quote - Quote currency (e.g., 'USDT')
    */
-  fetchPrice(base: string, quote: string): Promise<PriceData | null>;
+  fetchPrice(base: string, quote: string): Promise<PriceData>;
 
   /**
    * Subscribe to real-time price updates for a trading pair

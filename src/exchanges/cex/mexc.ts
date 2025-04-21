@@ -84,7 +84,7 @@ export class Mexc implements CEX {
     });
   }
 
-  async fetchPrice(base: string, quote: string): Promise<PriceData | null> {
+  async fetchPrice(base: string, quote: string): Promise<PriceData> {
     // try {
     //   const symbol = `${base}${quote}`;
     //   const response = await axios.get(
@@ -106,7 +106,12 @@ export class Mexc implements CEX {
     //   );
     //   throw new Error(`Failed to fetch price for ${base}/${quote} from MEXC`);
     // }
-    return null;
+    return {
+      exchange: this.name,
+      pair: `${base}/${quote}`,
+      price: null,
+      timestamp: Date.now(),
+    };
   }
 
   subscribeToPriceUpdates(

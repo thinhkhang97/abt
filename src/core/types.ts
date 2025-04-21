@@ -31,7 +31,7 @@ export interface ExchangeConfig {
 export interface PriceData {
   exchange: string;
   pair: string;
-  price: number; // price per unit of base currency
+  price: number | null; // price per unit of base currency
   timestamp: number;
 }
 

@@ -35,7 +35,8 @@ async function startFetchingPriceFromDEX(): Promise<void> {
   while (true) {
     await Promise.all(
       dexes.map(async (dex) => {
-        const prices = await dex.fetchPrices(config.dex[dex.name].pairs);
+        const pairs = config.dex[dex.name].pairs;
+        const prices = await dex.fetchPrices(pairs);
         prices.forEach((price) => {
           priceStore.updatePrice(dex.name, price.pair, price);
           console.log(priceStore.getPrice(dex.name, price.pair));
