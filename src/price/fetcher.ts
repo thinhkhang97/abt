@@ -1,3 +1,4 @@
+import detector from "../arbitrage/detector";
 import config from "../config";
 import logger from "../core/utils/logger";
 import cexes from "../exchanges/cex";
@@ -23,8 +24,11 @@ async function startFetchingPriceFromCEX(): Promise<void> {
       config.cex[cex.name].pairs.forEach(async (pair) => {
         const { base, quote } = pair;
         cex.subscribeToPriceUpdates(base, quote, (price) => {
-          priceStore.updatePrice(cex.name, `${base}${quote}`, price);
-          console.log(priceStore.getPrice(cex.name, `${base}${quote}`));
+          priceStore.updatePrice(`${base}${quote}`, cex.name, price);
+          const opportunities = detector.detect(`${base}${quote}`);
+          if (opportunities) {
+            console.log(`${base}${quote} has ${opportunities}% profit`);
+          }
         });
       });
     })
@@ -38,8 +42,11 @@ async function startFetchingPriceFromDEX(): Promise<void> {
         const pairs = config.dex[dex.name].pairs;
         const prices = await dex.fetchPrices(pairs);
         prices.forEach((price) => {
-          priceStore.updatePrice(dex.name, price.pair, price);
-          console.log(priceStore.getPrice(dex.name, price.pair));
+          priceStore.updatePrice(price.pair, dex.name, price);
+          const opportunities = detector.detect(price.pair);
+          if (opportunities) {
+            console.log(`${price.pair} has ${opportunities}% profit`);
+          }
         });
       })
     );

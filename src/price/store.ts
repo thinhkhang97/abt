@@ -1,24 +1,28 @@
 import { PriceData } from "../core/types";
 
-class PriceStore {
+export type PriceMap = Map<string, Map<string, PriceData | null>>;
+
+export class PriceStore {
   /**
    * Prices for each exchange and pair
    */
-  private prices: Map<string, Map<string, PriceData | null>> = new Map();
+  private prices: PriceMap = new Map();
 
   constructor() {
     this.prices = new Map();
   }
 
-  updatePrice(exchange: string, pair: string, priceData: PriceData | null) {
-    if (!this.prices.has(exchange)) {
-      this.prices.set(exchange, new Map());
+  updatePrice(pair: string, exchange: string, priceData: PriceData | null) {
+    if (!this.prices.has(pair)) {
+      this.prices.set(pair, new Map());
     }
-    this.prices.get(exchange)?.set(pair, priceData);
+    this.prices.get(pair)?.set(exchange, priceData);
   }
 
-  getPrice(exchange: string, pair: string): PriceData | null {
-    return this.prices.get(exchange)?.get(pair) || null;
+  getPrices(pair: string): PriceData[] {
+    return Array.from(this.prices.get(pair)?.values() || []).filter(
+      (price) => price !== null
+    ) as PriceData[];
   }
 }
 

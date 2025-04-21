@@ -58,7 +58,7 @@ export class Panora implements DEX {
       return prices.map((price: any) => ({
         exchange: this.name,
         pair: `${price.symbol}USDT`,
-        price: price.usdPrice,
+        price: parseFloat(price.usdPrice),
         timestamp: Date.now(),
       }));
     } catch (error) {
