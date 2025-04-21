@@ -16,6 +16,15 @@
           "quote": "USDT"
         }
       ]
+    },
+    "bitget": {
+      "enabled": true,
+      "pairs": [
+        {
+          "base": "LSD",
+          "quote": "USDT"
+        }
+      ]
     }
   },
   "dex": {

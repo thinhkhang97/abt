@@ -12,7 +12,7 @@ dotenv.config();
 async function bootstrap() {
   try {
     logger.info(`Starting arbitrage system...`);
-    notifier.sendMessage("Arbitrage system started");
+    // notifier.sendMessage("Arbitrage system started");
 
     // Start price fetching service
     await startPriceFetching();
@@ -23,7 +23,6 @@ async function bootstrap() {
     setupShutdownHandlers();
   } catch (error) {
     logger.error("Failed to start arbitrage system:", { error });
-    notifier.sendMessage(`Failed to start arbitrage system: ${error}`);
     process.exit(1);
   }
 }

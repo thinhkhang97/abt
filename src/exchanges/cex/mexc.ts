@@ -84,35 +84,35 @@ export class Mexc implements CEX {
     });
   }
 
-  async fetchPrice(base: string, quote: string): Promise<PriceData> {
-    // try {
-    //   const symbol = `${base}${quote}`;
-    //   const response = await axios.get(
-    //     `${MEXC_REST_URL}/api/v3/ticker/bookTicker`,
-    //     {
-    //       params: { symbol: symbol.toUpperCase() },
-    //     }
-    //   );
-    //   return {
-    //     exchange: this.name,
-    //     pair: `${base}/${quote}`,
-    //     price: parseFloat(response.data.bidPrice),
-    //     timestamp: Date.now(),
-    //   };
-    // } catch (error: unknown) {
-    //   console.error(
-    //     `Error fetching price for ${base}/${quote} from MEXC:`,
-    //     error
-    //   );
-    //   throw new Error(`Failed to fetch price for ${base}/${quote} from MEXC`);
-    // }
-    return {
-      exchange: this.name,
-      pair: `${base}/${quote}`,
-      price: null,
-      timestamp: Date.now(),
-    };
-  }
+  // async fetchPrice(base: string, quote: string): Promise<PriceData> {
+  // try {
+  //   const symbol = `${base}${quote}`;
+  //   const response = await axios.get(
+  //     `${MEXC_REST_URL}/api/v3/ticker/bookTicker`,
+  //     {
+  //       params: { symbol: symbol.toUpperCase() },
+  //     }
+  //   );
+  //   return {
+  //     exchange: this.name,
+  //     pair: `${base}/${quote}`,
+  //     price: parseFloat(response.data.bidPrice),
+  //     timestamp: Date.now(),
+  //   };
+  // } catch (error: unknown) {
+  //   console.error(
+  //     `Error fetching price for ${base}/${quote} from MEXC:`,
+  //     error
+  //   );
+  //   throw new Error(`Failed to fetch price for ${base}/${quote} from MEXC`);
+  // }
+  //   return {
+  //     exchange: this.name,
+  //     pair: `${base}/${quote}`,
+  //     price: null,
+  //     timestamp: Date.now(),
+  //   };
+  // }
 
   subscribeToPriceUpdates(
     base: string,
