@@ -27,7 +27,9 @@ async function startFetchingPriceFromCEX(): Promise<void> {
           priceStore.updatePrice(`${base}${quote}`, cex.name, price);
           const opportunities = detector.detect(`${base}${quote}`);
           if (opportunities) {
-            console.log(`${base}${quote} has ${opportunities}% profit`);
+            console.log(
+              `${base}${quote} has ${JSON.stringify(opportunities)}% profit`
+            );
           }
         });
       });
@@ -45,7 +47,9 @@ async function startFetchingPriceFromDEX(): Promise<void> {
           priceStore.updatePrice(price.pair, dex.name, price);
           const opportunities = detector.detect(price.pair);
           if (opportunities) {
-            console.log(`${price.pair} has ${opportunities}% profit`);
+            console.log(
+              `${price.pair} has ${JSON.stringify(opportunities)}% profit`
+            );
           }
         });
       })

@@ -10,6 +10,10 @@
         {
           "base": "THL",
           "quote": "USDT"
+        },
+        {
+          "base": "LSD",
+          "quote": "USDT"
         }
       ]
     }
@@ -27,6 +31,11 @@
           "base": "THL",
           "quote": "USDT",
           "tokenAddress": "0x7fd500c11216f0fe3095d0c4b8aa4d64a4e2e04f83758462f2b127255643615::thl_coin::THL"
+        },
+        {
+          "base": "LSD",
+          "quote": "USDT",
+          "tokenAddress": "0x53a30a6e5936c0a4c5140daed34de39d17ca7fcae08f947c02e979cef98a3719::coin::LSD"
         }
       ]
     }
