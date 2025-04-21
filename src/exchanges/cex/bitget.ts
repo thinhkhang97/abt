@@ -88,7 +88,7 @@ export class Bitget implements CEX {
     callback: (price: PriceData | null) => void
   ): void {
     if (!this.connected || !this.ws) {
-      throw new Error("Not connected to MEXC WebSocket");
+      throw new Error("Not connected to Bitget WebSocket");
     }
 
     const symbol = `${base}${quote}`;

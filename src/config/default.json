@@ -4,6 +4,10 @@
       "enabled": true,
       "pairs": [
         {
+          "base": "CELLA",
+          "quote": "USDT"
+        },
+        {
           "base": "AMI",
           "quote": "USDT"
         },
@@ -22,6 +26,15 @@
       "pairs": [
         {
           "base": "LSD",
+          "quote": "USDT"
+        }
+      ]
+    },
+    "gateio": {
+      "enabled": true,
+      "pairs": [
+        {
+          "base": "THL",
           "quote": "USDT"
         }
       ]
