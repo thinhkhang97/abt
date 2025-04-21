@@ -43,7 +43,7 @@
   "notification": {
     "telegram": {
       "enabled": true,
-      "minProfitToNotify": 0.8
+      "minProfitToNotify": 2
     }
   }
 }

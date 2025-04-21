@@ -3,6 +3,7 @@ import config from "../config";
 import logger from "../core/utils/logger";
 import cexes from "../exchanges/cex";
 import dexes from "../exchanges/dex";
+import { notifyOpportunity } from "../notification/notifier";
 import priceStore from "./store";
 
 /**
@@ -11,8 +12,8 @@ import priceStore from "./store";
 export async function startPriceFetching(): Promise<void> {
   logger.info("Starting price fetching service");
 
-  await startFetchingPriceFromCEX();
-  await startFetchingPriceFromDEX();
+  startFetchingPriceFromCEX();
+  startFetchingPriceFromDEX();
 
   logger.info("Price fetching service started");
 }
@@ -25,11 +26,12 @@ async function startFetchingPriceFromCEX(): Promise<void> {
         const { base, quote } = pair;
         cex.subscribeToPriceUpdates(base, quote, (price) => {
           priceStore.updatePrice(`${base}${quote}`, cex.name, price);
-          const opportunities = detector.detect(`${base}${quote}`);
-          if (opportunities) {
+          const opportunity = detector.detect(`${base}${quote}`);
+          if (opportunity) {
             console.log(
-              `${base}${quote} has ${JSON.stringify(opportunities)}% profit`
+              `${base}${quote} has ${JSON.stringify(opportunity)}% profit`
             );
+            notifyOpportunity(opportunity);
           }
         });
       });
@@ -45,11 +47,12 @@ async function startFetchingPriceFromDEX(): Promise<void> {
         const prices = await dex.fetchPrices(pairs);
         prices.forEach((price) => {
           priceStore.updatePrice(price.pair, dex.name, price);
-          const opportunities = detector.detect(price.pair);
-          if (opportunities) {
+          const opportunity = detector.detect(price.pair);
+          if (opportunity) {
             console.log(
-              `${price.pair} has ${JSON.stringify(opportunities)}% profit`
+              `${price.pair} has ${JSON.stringify(opportunity)}% profit`
             );
+            notifyOpportunity(opportunity);
           }
         });
       })

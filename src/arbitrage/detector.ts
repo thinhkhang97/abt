@@ -8,7 +8,6 @@ export class Detector {
   detect(pair: string): ArbitrageOpportunity | null {
     const priceData = priceStore.getPrices(pair);
     const prices = priceData.filter((p) => p.price !== null);
-    console.log("🚀 ~ Detector ~ detect ~ prices:", prices);
 
     if (prices.length < 2) {
       return null;
@@ -38,13 +37,13 @@ export class Detector {
     return {
       pair,
       profitPercent: profit,
-      buyExchange: highestPrice.exchange,
-      sellExchange: lowestPrice.exchange,
-      buyCost: highestPrice.price!,
-      sellProfit: lowestPrice.price!,
+      buyExchange: lowestPrice.exchange,
+      sellExchange: highestPrice.exchange,
+      buyCost: lowestPrice.price!,
+      sellProfit: highestPrice.price!,
       details: {
-        buyPrice: highestPrice.price!,
-        sellPrice: lowestPrice.price!,
+        buyPrice: lowestPrice.price!,
+        sellPrice: highestPrice.price!,
       },
       timestamp: Date.now(),
     };
