@@ -14,33 +14,36 @@ export class Panora implements DEX {
     this.apiKey = process.env.PANORA_API_KEY || "";
     console.log(this.endPoint, this.apiKey);
   }
-  async connect(): Promise<boolean> {
+
+  supportFetchingPrices(): boolean {
     return true;
   }
 
-  async fetchPrice(
-    name: string,
-    tokenAddress: string
-  ): Promise<PriceData | null> {
+  async fetchPrice(pair: DexPair): Promise<PriceData> {
     try {
       const response = await axios.get(this.endPoint, {
         headers: {
           "x-api-key": this.apiKey,
         },
         params: {
-          tokenAddress,
+          tokenAddress: pair.tokenAddress,
         },
       });
       const price = response.data[0];
       return {
         exchange: this.name,
-        pair: `${name}`,
+        pair: `${pair.base}${pair.quote}`,
         price: price.usdPrice,
         timestamp: Date.now(),
       };
     } catch (error) {
       console.error("Error fetching price from panora", error);
-      return null;
+      return {
+        exchange: this.name,
+        pair: `${pair.base}${pair.quote}`,
+        price: null,
+        timestamp: Date.now(),
+      };
     }
   }
 
@@ -55,9 +58,9 @@ export class Panora implements DEX {
         },
       });
       const prices = response.data;
-      return prices.map((price: any) => ({
+      return prices.map((price: any, index: number) => ({
         exchange: this.name,
-        pair: `${price.symbol}USDT`,
+        pair: `${pairs[index].base}${pairs[index].quote}`,
         price: parseFloat(price.usdPrice),
         timestamp: Date.now(),
       }));

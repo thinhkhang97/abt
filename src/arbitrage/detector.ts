@@ -8,7 +8,9 @@ export class Detector {
   detect(pair: string): ArbitrageOpportunity | null {
     const priceData = priceStore.getPrices(pair);
     console.log("🚀 ~ Detector ~ detect ~ priceData:", priceData);
-    const prices = priceData.filter((p) => p.price !== null);
+    const prices = priceData.filter(
+      (p) => p.price !== null && p.price !== 0 && p.price !== undefined
+    );
 
     if (prices.length < 2) {
       return null;

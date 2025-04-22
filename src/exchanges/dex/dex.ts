@@ -11,10 +11,15 @@ export interface DEX {
   name: string;
 
   /**
+   * Check if the exchange supports fetching prices
+   */
+  supportFetchingPrices(): boolean;
+
+  /**
    * Fetch current price for a trading pair
    * @param tokenAddress - Token address
    */
-  fetchPrice(name: string, tokenAddress: string): Promise<PriceData | null>;
+  fetchPrice(pair: DexPair): Promise<PriceData>;
 
   /**
    * Fetch current price for a trading pair

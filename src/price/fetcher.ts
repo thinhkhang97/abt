@@ -41,22 +41,33 @@ async function startFetchingPriceFromCEX(): Promise<void> {
 
 async function startFetchingPriceFromDEX(): Promise<void> {
   while (true) {
-    await Promise.all(
-      dexes.map(async (dex) => {
-        const pairs = config.dex[dex.name].pairs;
-        const prices = await dex.fetchPrices(pairs);
-        prices.forEach((price) => {
-          priceStore.updatePrice(price.pair, dex.name, price);
-          const opportunity = detector.detect(price.pair);
-          if (opportunity) {
-            console.log(
-              `${price.pair} has ${JSON.stringify(opportunity)}% profit`
-            );
-            notifyOpportunity(opportunity);
+    try {
+      await Promise.all(
+        dexes.map(async (dex) => {
+          const pairs = config.dex[dex.name].pairs;
+          if (!dex.supportFetchingPrices()) {
+            for (const pair of pairs) {
+              const price = await dex.fetchPrice(pair);
+              priceStore.updatePrice(price.pair, dex.name, price);
+            }
+            return;
           }
-        });
-      })
-    );
+          const prices = await dex.fetchPrices(pairs);
+          prices.forEach((price) => {
+            priceStore.updatePrice(price.pair, dex.name, price);
+            const opportunity = detector.detect(price.pair);
+            if (opportunity) {
+              console.log(
+                `${price.pair} has ${JSON.stringify(opportunity)}% profit`
+              );
+              notifyOpportunity(opportunity);
+            }
+          });
+        })
+      );
+    } catch (error) {
+      logger.error("Error fetching price from DEX", error);
+    }
     await new Promise((resolve) => setTimeout(resolve, 10000));
   }
 }
