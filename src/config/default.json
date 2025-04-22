@@ -58,6 +58,11 @@
           "base": "LSD",
           "quote": "USDT",
           "tokenAddress": "0x53a30a6e5936c0a4c5140daed34de39d17ca7fcae08f947c02e979cef98a3719::coin::LSD"
+        },
+        {
+          "base": "CELLA",
+          "quote": "USDT",
+          "tokenAddress": "0x2ebb2ccac5e027a87fa0e2e5f656a3a4238d6a48d93ec9b610d570fc0aa0df12"
         }
       ]
     }
