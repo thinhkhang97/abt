@@ -1,14 +1,28 @@
 import config from "../config";
 import { ArbitrageOpportunity, PriceData } from "../core/types";
-import priceStore from "../price/store";
+import { cexes, dexes } from "../exchanges";
 
 export class Detector {
   constructor(private readonly minProfitThreshold: number) {}
 
   detect(pair: string): ArbitrageOpportunity | null {
-    const priceData = priceStore.getPrices(pair);
-    console.log("🚀 ~ Detector ~ detect ~ priceData:", priceData);
-    const prices = priceData.filter(
+    const priceList: PriceData[] = [];
+    for (const exchange of cexes) {
+      const priceData = exchange.getPrice(pair);
+      if (priceData) {
+        priceList.push(priceData);
+      }
+    }
+
+    for (const exchange of dexes) {
+      const priceData = exchange.getPrice(pair);
+      if (priceData) {
+        priceList.push(priceData);
+      }
+    }
+
+    console.log("🚀 ~ Detector ~ detect ~ priceList:", priceList);
+    const prices = priceList.filter(
       (p) => p.price !== null && p.price !== 0 && p.price !== undefined
     );
 

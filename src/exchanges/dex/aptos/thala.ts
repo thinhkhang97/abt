@@ -11,12 +11,11 @@ const nameToTokenName: Record<string, string> = {
   USDT: "tether",
 };
 
-export class Thala implements DEX {
-  name: string;
+export class Thala extends DEX {
   endPoint: string;
 
   constructor() {
-    this.name = "thala";
+    super("thala");
     this.endPoint = "https://app.thala.fi/api/coin-prices";
   }
 
@@ -30,20 +29,24 @@ export class Thala implements DEX {
         `https://app.thala.fi/api/panora-prices?coins=${pair.tokenAddress}`
       );
       const price = response.data;
-      return {
+      const priceData: PriceData = {
         exchange: this.name,
         pair: `${pair.base}${pair.quote}`,
-        price: price.data[0],
+        price: parseFloat(price.data[0]) || null,
         timestamp: Date.now(),
       };
+      this.priceStore.set(pair.tokenAddress, priceData);
+      return priceData;
     } catch (error) {
       console.error("Error fetching price from thala", error);
-      return {
+      const priceData: PriceData = {
         exchange: this.name,
         pair: `${pair.base}${pair.quote}`,
         price: null,
         timestamp: Date.now(),
       };
+      this.priceStore.set(pair.tokenAddress, priceData);
+      return priceData;
     }
   }
 
@@ -55,15 +58,25 @@ export class Thala implements DEX {
           .join(",")}`
       );
       const price = response.data;
-      return pairs.map((pair, index) => ({
+      const priceData: PriceData[] = pairs.map((pair, index) => ({
         exchange: this.name,
         pair: `${pair.base}${pair.quote}`,
-        price: price.data[index],
+        price: parseFloat(price.data[index]) || null,
         timestamp: Date.now(),
       }));
+      pairs.forEach((pair, index) => {
+        this.priceStore.set(`${pair.base}${pair.quote}`, priceData[index]);
+      });
+      return priceData;
     } catch (error) {
       console.error("Error fetching price from thala", error);
-      return [];
+      const priceData: PriceData[] = pairs.map((pair) => ({
+        exchange: this.name,
+        pair: `${pair.base}${pair.quote}`,
+        price: null,
+        timestamp: Date.now(),
+      }));
+      return priceData;
     }
   }
 }

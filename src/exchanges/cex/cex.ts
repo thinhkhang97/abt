@@ -1,19 +1,50 @@
 import { PriceData } from "../../core/types";
+import WebSocket from "ws";
 
 /**
  * Base interface for all exchange implementations
  */
-export interface CEX {
+export abstract class CEX {
   /**
    * Exchange name
    */
-  name: string;
+  protected name: string;
+
+  /**
+   * Price store
+   */
+  protected priceStore: Map<string, PriceData>;
+
+  /**
+   * WebSocket connection
+   */
+  protected ws: WebSocket | null = null;
+
+  /**
+   * Connected
+   */
+  protected connected = false;
+
+  /**
+   * Subscriptions
+   */
+  protected subscriptions: Map<string, (price: PriceData | null) => void> =
+    new Map();
+
+  constructor(name: string) {
+    this.name = name;
+    this.priceStore = new Map();
+  }
+
+  public getName(): string {
+    return this.name;
+  }
 
   /**
    * Connect to the exchange
    * Returns true if connection was successful
    */
-  connect(): Promise<boolean>;
+  abstract connect(): Promise<boolean>;
 
   /**
    * Fetch current price for a trading pair
@@ -28,7 +59,7 @@ export interface CEX {
    * @param quote - Quote currency
    * @param callback - Function to call when price is updated
    */
-  subscribeToPriceUpdates(
+  abstract subscribeToPriceUpdates(
     base: string,
     quote: string,
     callback: (price: PriceData | null) => void
@@ -39,7 +70,15 @@ export interface CEX {
    * @param base - Base currency
    * @param quote - Quote currency
    */
-  unsubscribeFromPriceUpdates(base: string, quote: string): void;
+  abstract unsubscribeFromPriceUpdates(base: string, quote: string): void;
+
+  /**
+   * Get the price for a trading pair
+   * @param pair - Trading pair
+   */
+  getPrice(pair: string): PriceData | null {
+    return this.priceStore.get(pair) || null;
+  }
 
   /**
    * Check if the exchange supports a specific trading pair

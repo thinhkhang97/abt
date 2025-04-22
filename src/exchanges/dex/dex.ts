@@ -4,26 +4,44 @@ import { PriceData } from "../../core/types";
 /**
  * Base interface for all exchange implementations
  */
-export interface DEX {
+export abstract class DEX {
   /**
    * Exchange name
    */
-  name: string;
+  protected name: string;
+
+  /**
+   * Price store
+   */
+  protected priceStore: Map<string, PriceData>;
+
+  constructor(name: string) {
+    this.name = name;
+    this.priceStore = new Map();
+  }
+
+  public getName(): string {
+    return this.name;
+  }
+
+  public getPrice(pair: string): PriceData | null {
+    return this.priceStore.get(pair) || null;
+  }
 
   /**
    * Check if the exchange supports fetching prices
    */
-  supportFetchingPrices(): boolean;
+  abstract supportFetchingPrices(): boolean;
 
   /**
    * Fetch current price for a trading pair
    * @param tokenAddress - Token address
    */
-  fetchPrice(pair: DexPair): Promise<PriceData>;
+  abstract fetchPrice(pair: DexPair): Promise<PriceData>;
 
   /**
    * Fetch current price for a trading pair
    * @param pairs - Trading pairs
    */
-  fetchPrices(pairs: DexPair[]): Promise<PriceData[]>;
+  abstract fetchPrices(pairs: DexPair[]): Promise<PriceData[]>;
 }

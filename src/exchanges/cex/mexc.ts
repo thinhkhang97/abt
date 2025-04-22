@@ -7,15 +7,9 @@ import { CEX } from "./cex";
 const MEXC_WS_URL = "wss://wbs.mexc.com/ws";
 // const MEXC_REST_URL = "https://api.mexc.com";
 
-export class Mexc implements CEX {
-  name: string;
-  private ws: WebSocket | null = null;
-  private subscriptions: Map<string, (price: PriceData | null) => void> =
-    new Map();
-  private connected = false;
-
+export class Mexc extends CEX {
   constructor() {
-    this.name = "mexc";
+    super("mexc");
   }
 
   async connect(): Promise<boolean> {
@@ -46,14 +40,15 @@ export class Mexc implements CEX {
 
                 const pair = `${symbol}`;
                 const callback = this.subscriptions.get(pair);
-                if (callback && message.d) {
-                  const tickerData = message.d;
-                  const priceData: PriceData = {
-                    exchange: this.name,
-                    pair,
-                    price: parseFloat(tickerData.deals[0].p),
-                    timestamp: Date.now(),
-                  };
+                const tickerData = message.d;
+                const priceData: PriceData = {
+                  exchange: this.name,
+                  pair,
+                  price: parseFloat(tickerData.deals[0].p) || null,
+                  timestamp: Date.now(),
+                };
+                this.priceStore.set(pair, priceData);
+                if (callback) {
                   callback(priceData);
                 }
               }

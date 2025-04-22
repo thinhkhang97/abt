@@ -27,15 +27,9 @@ export interface BitgetTickerData {
   }[];
 }
 
-export class Bitget implements CEX {
-  name: string;
-  private ws: WebSocket | null = null;
-  private subscriptions: Map<string, (price: PriceData | null) => void> =
-    new Map();
-  private connected = false;
-
+export class Bitget extends CEX {
   constructor() {
-    this.name = "bitget";
+    super("bitget");
   }
 
   async connect(): Promise<boolean> {
@@ -59,13 +53,17 @@ export class Bitget implements CEX {
         }
         for (const ticker of data.data) {
           const callback = this.subscriptions.get(ticker.instId);
-          if (callback) {
-            callback({
-              exchange: this.name,
-              pair: ticker.instId,
-              price: parseFloat(ticker.lastPr),
-              timestamp: Date.now(),
-            });
+          const priceData = {
+            exchange: this.name,
+            pair: ticker.instId,
+            price: parseFloat(ticker.lastPr),
+            timestamp: Date.now(),
+          };
+          if (priceData.price !== this.priceStore.get(ticker.instId)?.price) {
+            this.priceStore.set(ticker.instId, priceData);
+            if (callback) {
+              callback(priceData);
+            }
           }
         }
       });

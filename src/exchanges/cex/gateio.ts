@@ -40,15 +40,9 @@ type TickerUpdate = {
   };
 };
 
-export class Gateio implements CEX {
-  name: string;
-  private ws: WebSocket | null = null;
-  private subscriptions: Map<string, (price: PriceData | null) => void> =
-    new Map();
-  private connected = false;
-
+export class Gateio extends CEX {
   constructor() {
-    this.name = "gateio";
+    super("gateio");
   }
 
   async connect(): Promise<boolean> {
@@ -79,13 +73,15 @@ export class Gateio implements CEX {
           const result = data.result as TickerUpdate["result"];
           const pair = result.currency_pair.replace("_", "");
           const callback = this.subscriptions.get(pair);
+          const priceData = {
+            exchange: this.name,
+            pair,
+            price: parseFloat(result.last),
+            timestamp: Date.now(),
+          };
+          this.priceStore.set(pair, priceData);
           if (callback) {
-            callback({
-              exchange: this.name,
-              pair,
-              price: parseFloat(result.last),
-              timestamp: Date.now(),
-            });
+            callback(priceData);
           }
         }
       });
